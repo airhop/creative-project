@@ -1,0 +1,423 @@
+	body {
+    margin:0;
+    padding:100px 0 50px 0;
+	background-color: #B8B8B8;
+
+}
+	h1{
+	width: 40%;
+ 	font-family: 'Exo', serif;
+ 	font-size: 30px;
+	color: black;
+	text-align: left;
+	padding-left: 23%;
+        border-bottom: ridge black 1px;
+	border-color: grey grey;
+}
+	h2{
+	position: relative;
+	font-family: 'Exo', serif;
+ 	font-size: 40px;
+	color: white;
+	text-shadow: 4px 4px black;
+}
+	h3{
+ 	font-family: 'Exo', serif;
+ 	font-size: 60px;
+	color: black;
+	background-color: #5F5F5F;
+	text-align: center;
+}
+	h5{
+	font-family: 'Exo', serif;
+ 	font-size: 20px;
+	color: black;
+
+}
+	h6{
+	padding-top: 4%;
+  font: 400 100px/1.2 'Merienda One', Helvetica, sans-serif;
+  color: rgba(0,0,0,0.7);
+  text-shadow: 3px 3px 3px #fff;
+	text-align: center;
+	}
+	h7{
+	font-family: 'Exo', serif;
+ 	font-size: 25px;
+	color: black;
+	text-align: center;
+	}
+	h8{
+	position: relative;
+	font-family: 'Exo', serif;
+ 	font-size: 30px;
+	color: white;
+	text-shadow: 2px 2px black;
+}
+	h9{
+	position: relative;
+	font-family: 'Exo', serif;
+ 	font-size: 20px;
+	color: white;
+	text-shadow: 2px 2px black;
+	float:right;
+}
+div#header {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    overflow:auto; zoom: 1;
+    background-color: #5900b3;
+    box-shadow: 10px 10px 5px #888888;
+}
+
+ @media screen {
+    body>div#header {
+        position:fixed;
+    }
+
+    body>div#footer {
+        position:fixed;
+    }
+}
+
+* html body {
+    overflow:hidden;
+}
+
+* html div#content {
+    height:100%;
+    overflow:auto;
+}
+
+#chatter{
+ 	font-family: 'Exo', serif;
+ 	font-size: 55px;
+	color: white;
+	text-shadow: 2px 2px black;
+   	text-align:left;
+	padding-right:55%;
+}
+#menu{
+    	text-align:right;
+}
+#nav {
+}
+
+#nav li {
+    display:inline;
+    margin-left: 1%;
+}
+
+#nav li a {
+    font-weight: bold;
+ 	background-color: white;
+   	 border: outset;
+   	 color: black;
+   	 padding: .25% .75%;
+    	 text-align: center;
+   	 text-decoration: none;
+   	 display: inline-block;
+    	 font-size: 18px;
+ 	 font-family: 'Exo', serif;    
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    border-radius: 14px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+#nav li a:hover, #nav li a:focus {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.15);
+}
+#main-page{
+ 	background-color: white;
+	width:75%;
+	height: 900px;
+	box-shadow: 1px 1px 1px 2px #888888;
+	margin-left: 12%;
+	margin-top: 5%;
+}
+.item{
+	width: 45%;
+	height: 450px;
+	margin-left: 27%;
+	margin-top: 5%;
+	border:solid;
+}
+#main-image{
+}	
+	.button {
+	 margin-top: 3%;
+   	 background-color: #5900b3;
+   	 border: none;
+   	 color: white;
+   	 padding: 15px 32px;
+    	 text-align: center;
+   	 text-decoration: none;
+   	 display: inline-block;
+    	 font-size: 16px;
+	}  
+
+
+@import url(http://fonts.googleapis.com/css?family=Varela+Round);
+
+
+.slides {
+    padding: 0;
+    width: 609px;
+    height: 420px;
+    display: block;
+    margin-left: 5%;
+    position: relative;
+    border-style: outset;
+    border-width: 8px;
+}
+
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.slides input { display: none; }
+
+.slide-container { display: block; }
+
+.slide {
+    top: 0;
+    opacity: 0;
+    width: 609px;
+    height: 420px;
+    display: block;
+    position: absolute;
+
+    transform: scale(0);
+
+    transition: all .7s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav label {
+    width: 200px;
+    height: 100%;
+    display: none;
+    position: absolute;
+
+	  opacity: 0;
+    z-index: 9;
+    cursor: pointer;
+
+    transition: opacity .2s;
+
+    color: #FFF;
+    font-size: 156pt;
+    text-align: center;
+    line-height: 380px;
+    font-family: "Varela Round", sans-serif;
+    background-color: rgba(255, 255, 255, .3);
+    text-shadow: 0px 0px 15px rgb(119, 119, 119);
+}
+
+.slide:hover + .nav label { opacity: 0.5; }
+
+.nav label:hover { opacity: 1; }
+
+.nav .next { right: 0; }
+
+input:checked + .slide-container  .slide {
+    opacity: 1;
+
+    transform: scale(1);
+
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .nav label { display: block; }
+
+.nav-dots {
+	width: 100%;
+	bottom: 9px;
+	height: 11px;
+	display: block;
+	position: absolute;
+	text-align: center;
+}
+
+.nav-dots .nav-dot {
+	top: -5px;
+	width: 11px;
+	height: 11px;
+	margin: 0 4px;
+	position: relative;
+	border-radius: 100%;
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-dots .nav-dot:hover {
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+input#img-1:checked ~ .nav-dots label#img-dot-1,
+input#img-2:checked ~ .nav-dots label#img-dot-2,
+input#img-3:checked ~ .nav-dots label#img-dot-3,
+input#img-4:checked ~ .nav-dots label#img-dot-4,
+input#img-5:checked ~ .nav-dots label#img-dot-5,
+input#img-6:checked ~ .nav-dots label#img-dot-6 {
+	background: rgba(0, 0, 0, 0.8);
+}
+
+#slide-frame{
+	background-color: #333333;
+}
+
+#slide-rating{
+    position: relative;
+     width: 125px;
+    height: 125px;
+   	 background-color: yellow;
+   	 border: none;
+   	 color: black;
+   	 padding: 75px 50px 25px 50px;
+    	 text-align: center;
+   	 text-decoration: none;
+   	 display: inline-block;
+    	 font-family: 'Exo', serif;
+ 	font-size: 75px;
+    border: solid 4px black;
+
+}
+
+#title-rating{
+    position: relative;
+    float:right;
+    padding-right: 15%;
+}
+#submission-form{
+ 	background-color: white;
+	width:60%;
+	height: 900px;
+	box-shadow: 1px 1px 1px 2px #888888;
+	margin-left: 19%;
+	margin-top: 5%;
+}
+#welcome{
+         font-family: 'Lato', Sans-Serif;
+ 	font-size: 50px;
+	text-align: center;
+	color: #5900b3;
+	text-shadow: 1px 1px black;
+}
+#submission-type{
+font-family: 'Exo', serif;
+ 	font-size:40px;
+	color: black;
+	text-shadow: .5px .5px black;
+}
+#formSave{
+background: -webkit-gradient(linear, bottom, left 175px, from(#CCCCCC), to(#EEEEEE));
+background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+margin:auto;
+position:relative;
+width:550px;
+height:450px;
+font-family: Tahoma, Geneva, sans-serif;
+font-size: 14px;
+font-style: italic;
+line-height: 24px;
+font-weight: bold;
+color: #09C;
+text-decoration: none;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+padding:10px;
+border: 1px solid #999;
+border: inset 1px solid #333;
+-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+#field{
+ border: 5px solid white; 
+    -webkit-box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    -moz-box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    padding: 15px;
+    background: rgba(255,255,255,0.5);
+    margin: 0 0 10px 0;
+}
+#main-page-thanks{
+ 	background-color: white;
+	width:75%;
+	height: 600px;
+	box-shadow: 2px 2px 1px 2px #888888;
+	margin-left: 12%;
+	margin-top: 5%;
+}
+#special-link{
+font: bold 11px Arial;
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: #333333;
+  padding: 10px 10px 10px 10px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+}
+#div1{
+	margin-top:10%;
+	font-family: 'Exo', serif;
+ 	font-size: 35px;
+	align-text:center;
+
+}
+#fieldReview{
+ border: 5px solid white; 
+    -webkit-box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    -moz-box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    padding: 15px;
+    background: rgba(255,255,255,0.5);
+    margin: 0 0 10px 0;
+    width: 40%;
+    height: 40%;
+}
+#footer {
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 25px;
+	background:#5900b3;
+	width:100%;
+	height:50px;
+	position:relative;
+	bottom:0;
+	left:0;
+}
